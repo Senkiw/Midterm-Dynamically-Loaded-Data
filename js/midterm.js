@@ -2,14 +2,14 @@ var loadBtn;
 var showBtn;
 var myData = [];
 var x = 0;
-//var clicks = 0;
-var outputTwo = document.querySelector("#output2");
+var outputTwo
 
 document.addEventListener("DOMContentLoaded", starter);
 
 function starter() {
 	loadBtn = document.getElementById("loadBtn");
  	showBtn = document.getElementById("showBtn");
+ 	outputTwo = document.querySelector("#output2");
 	loadBtn.addEventListener("click", clickBtn);
 }
 
@@ -62,38 +62,6 @@ function loadOne() {
 		'<div><img src=' + myData[x - 2].thumbnail + '>' +
 		'<a href="mailto:' + myData[x - 2].email + '">' +
 		myData[x - 2].firstName + ' ' + myData[x - 2].lastName + '</a></div>';
-    
+    	outputTwo.removeChild(outputTwo.firstChild);
     }
-   // onClick();
-  // if (x > 1) {
-   	//outputTwo.removeChild(outputTwo.firstChild)
-   //}
-   outputTwo.removeChild(outputTwo.firstChild);
 }
-
-//function onClick(){
-	//clicks ++;
-	//document.getElementById("showBtn");
-	//console.log(clicks);
-	//if (clicks >= 0) {
-	//	outputTwo.removeChild(outputTwo.firstChild);
-	//}
-//}; 
-
-//var div = document.createElement("div");
-//var outputTwo = doucment.querySelector("#output2");
-
-
-//if (onClick >= 0){
-//	outputTwo.removeChild(outputTwo.firstChild);
-//} 
-
-
-//var myString = 
-
-// appends the top div after it adds a third div??
-// capitalize first and last name
-// for (i=0; i<3; i++) {myArray[count-i]};
-
-
-
